@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "vitepress dev content",
+    "build": "vitepress build content",
+    "preview": "vitepress preview content"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.8",
+    "sass": "^1.69.7",
+    "vitepress": "1.0.0-rc.36"
+  }
+}

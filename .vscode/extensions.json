@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "streetsidesoftware.code-spell-checker",
+        "xabikos.javascriptsnippets",
+        "dbaeumer.vscode-eslint",
+        "matijao.vue-nuxt-snippets",
+        "vue.volar"
+    ]
+}

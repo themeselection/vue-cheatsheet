@@ -1,0 +1,23 @@
+{
+    // JSON
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // Markdown
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "markdown.validate.enabled": true,
+        "markdown.occurrencesHighlight.enabled": true,
+    },
+    "markdown.styles": [
+        "https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-dark.css",
+        "https://cdn.jsdelivr.net/gh/elegantech/github-markdown-css@transparent/github-markdown-with-transparent-background.min.css"
+    ],
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
+    "emmet.includeLanguages": {
+        "markdown": "html",
+    },
+}
