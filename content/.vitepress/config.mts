@@ -16,9 +16,14 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Cheatsheet',
         items: [
-          { text: 'Rendering', link: '/rendering' },
+          { text: 'Basic', link: '/basic' },
+          { text: 'Reactivity', link: '/reactivity' },
+          { text: 'Form Inputs', link: '/form-input' },
+          { text: 'Lifecycle Hooks', link: '/lifecycle-hooks' },
+          { text: 'Component', link: '/component' },
+          { text: 'Built-in Components', link: '/built-in-components' },
         ]
       }
     ],
@@ -35,8 +40,10 @@ export default defineConfig({
   },
   markdown: {
     // ℹ️ We only enabled this in development so that we can highlight code lines by seeing line number without calculating it in our editor.
-    lineNumbers: isDev,
+    lineNumbers: false,
+    toc: { level: [1, 2,] },
     
     theme: 'dracula',
+    math: true,
   }
 })

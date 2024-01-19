@@ -3,3 +3,25 @@
     --vp-c-brand-2: #42d392;
     --vp-c-brand-3: #35eb9a;
 }
+
+// For the `Dracula` theme in the light mode : https://github.com/vuejs/vitepress/issues/3435 
+:root {
+    --vp-code-block-color: rgba(255, 255, 245, 0.86);
+    --vp-code-block-bg: #161618;
+    --vp-code-block-divider-color: #000000;
+  
+    --vp-code-lang-color: rgba(235, 235, 245, 0.38);
+  
+    --vp-code-line-highlight-color: #000000;
+    --vp-code-line-number-color: rgba(235, 235, 245, 0.38);
+  
+    --vp-code-copy-code-border-color: rgba(82, 82, 89, 0.32);
+    --vp-code-copy-code-bg: #252529;
+    --vp-code-copy-code-hover-border-color: rgba(82, 82, 89, 0.32);
+    --vp-code-copy-code-hover-bg: #323238;
+    --vp-code-copy-code-active-text: rgba(255, 255, 245, 0.86);
+  
+    --vp-code-tab-text-color: rgba(235, 235, 245, 0.6);
+    --vp-code-tab-hover-text-color: rgba(255, 255, 245, 0.86);
+    --vp-code-tab-active-text-color: rgba(255, 255, 245, 0.86);
+  }
