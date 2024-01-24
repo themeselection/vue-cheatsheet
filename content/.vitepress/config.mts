@@ -27,6 +27,7 @@ export default defineConfig({
           { text: 'Lifecycle Hooks', link: '/lifecycle-hooks' },
           { text: 'Component', link: '/component' },
           { text: 'Props', link: '/props' },
+          { text: 'Events', link: '/events' },
           { text: 'Built-in Components', link: '/built-in-components' },
         ]
       }
