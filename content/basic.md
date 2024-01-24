@@ -213,3 +213,84 @@ onMounted(() => input.value.focus())
   <input ref="input" />
 </template>
 ```
+
+## Events
+
+```vue
+
+<!-- Inline Handler -->
+<button v-on:click="console.log('hello')">print</button>
+
+<!-- Method Handler -->
+<button v-on:click="greet">Greet</button>
+
+<!-- use shorthand for v-on `@` -->
+<button @click="console.log('hello')">print</button>
+
+<!-- Calling methods in inline handler -->
+<button @click="say('hello')">Say hello</button>
+
+
+<!-- Access Event Argument -->
+<!-- using $event special variable -->
+<button @click="warn('Form cannot be submitted yet.', $event)">
+  Submit
+</button>
+
+<!-- using inline arrow function -->
+<button @click="(event) => warn('Form cannot be submitted yet.', event)">
+  Submit
+</button>
+
+<!-- Event Modifiers -->
+<!-- the click event's propagation will be stopped -->
+<a @click.stop="doThis"></a>
+
+<!-- the submit event will no longer reload the page -->
+<form @submit.prevent="onSubmit"></form>
+
+<!-- modifiers can be chained -->
+<a @click.stop.prevent="doThat"></a>
+
+<!-- just the modifier -->
+<form @submit.prevent></form>
+
+<!-- only trigger handler if event.target is the element itself -->
+<!-- i.e. not from a child element -->
+<div @click.self="doThat">...</div>
+
+<!-- use capture mode when adding the event listener     -->
+<!-- i.e. an event targeting an inner element is handled -->
+<!-- here before being handled by that element           -->
+<div @click.capture="doThis">...</div>
+
+<!-- the click event will be triggered at most once -->
+<a @click.once="doThis"></a>
+
+<!-- the scroll event's default behavior (scrolling) will happen -->
+<!-- immediately, instead of waiting for `onScroll` to complete  -->
+<!-- in case it contains `event.preventDefault()`                -->
+<div @scroll.passive="onScroll">...</div>
+```
+
+### Key Modifiers
+
+| Key Modifier | Example Usage |
+| ------------ | ------------- |
+| Enter | `<input v-on:keyup.enter="methodName">` |
+| Tab | `<input v-on:keyup.tab="methodName">` |
+| Delete (or Backspace) | `<input v-on:keyup.delete="methodName">` |
+| Escape | `<input v-on:keyup.esc="methodName">` |
+| Space | `<input v-on:keyup.space="methodName">` |
+| Arrow Up | `<input v-on:keyup.arrow-up="methodName"></input>` |
+| Arrow Down | `<input v-on:keyup.arrow-down="methodName"></input>` |
+| Arrow Left | `<input v-on:keyup.arrow-left="methodName"></input>` |
+| Arrow Right | `<input v-on:keyup.arrow-right="methodName"></input>` |
+
+### Mouse modifiers
+
+| Mouse Modifier | Example Usage |
+| ------------ | ------------- |
+| Left Click | `<button v-on:mousedown.left="leftClickMethod">Left Click</button>` |
+| Right Click | `<button v-on:mousedown.right="rightClickMethod">Right Click</button>` |
+| Middle Click | `<button v-on:mousedown.middle="middleClickMethod">Middle Click</button>` |

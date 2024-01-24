@@ -1,5 +1,85 @@
 # Component
 
+## Register Component
+
+### Global Registration
+
+```ts
+import MyComponent from './App.vue'
+
+app.component('MyComponent', MyComponent)
+
+// We can chain component method
+app
+  .component('ComponentA', ComponentA)
+  .component('ComponentB', ComponentB)
+  .component('ComponentC', ComponentC)
+```
+
+Now `MyComponent` is globally available. We can use it in any component like below:
+
+```vue
+<MyComponent />
+```
+
+### Local Registration
+
+```vue
+<script setup>
+import ComponentA from './ComponentA.vue'
+</script>
+
+<template>
+  <ComponentA />
+</template>
+```
+
+## Defining a Component
+
+There are several ways to define a component in vue js. We have listed all below
+
+### 1. SFC
+
+```ts
+<script setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+<template>
+  <button @click="count++">You clicked me {{ count }} times.</button>
+</template>
+```
+
+### 2. defineComponent
+
+```ts
+import { ref, h, defineComponent } from 'vue'
+
+const Comp = defineComponent(
+  (props) => {
+
+    return () => {
+      return h('div', props.title)
+    }
+  },
+  {
+    props: {
+      title: String,
+    }
+  }
+)
+
+export default Comp
+```
+
+### 3. defineAsyncComponent
+
+```ts
+defineAsyncComponent(() => import('@/components/TestCompo.vue'));
+```
+
 ## Props
 
 ```vue

@@ -9,6 +9,9 @@ export default defineConfig({
   title: "Vue Cheatsheet",
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
   themeConfig: {
+    search: {
+      provider: 'local',
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -26,6 +29,8 @@ export default defineConfig({
           { text: 'Form Inputs', link: '/form-input' },
           { text: 'Lifecycle Hooks', link: '/lifecycle-hooks' },
           { text: 'Component', link: '/component' },
+          { text: 'Props', link: '/props' },
+          { text: 'Events', link: '/events' },
           { text: 'Built-in Components', link: '/built-in-components' },
         ]
       }
@@ -52,7 +57,7 @@ export default defineConfig({
     // ℹ️ We only enabled this in development so that we can highlight code lines by seeing line number without calculating it in our editor.
     lineNumbers: false,
     toc: { level: [1, 2,] },
-    
+
     theme: 'dracula',
     math: true,
   },
