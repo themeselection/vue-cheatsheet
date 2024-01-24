@@ -52,48 +52,9 @@ const count = ref(0)
 </template>
 ```
 
-### 2. defineAsyncComponent
+### 2. defineComponent
 
-::: code-group
-
-  ```vue [index.vue]
-  <script setup lang="ts">
-    import { defineAsyncComponent, ref } from 'vue';
-    const TestCompo = defineAsyncComponent(() => import('@/components/TestCompo.vue'));
-    const show = ref(false)
-  </script>
-
-  <template>
-    <main>
-      <button @click="show = !show">Toggle</button>
-      <TestCompo v-if="show"></TestCompo>
-    </main>
-  </template>
-  ```
-
-  ```vue [TestCompo.vue]
-  <template>
-    This is a test component
-  </template>
-  ```
-
-:::
-
-### 3. defineComponent
-
-::: code-group
-
-```vue [App.vue]
-<script setup>
-import Post from './Post.ts'
-</script>
-
-<template>
-  <Post title="Vuexy"/>
-</template>
-```
-
-```ts [Post.ts]
+```ts
 import { ref, h, defineComponent } from 'vue'
 
 const Comp = defineComponent(
@@ -113,7 +74,11 @@ const Comp = defineComponent(
 export default Comp
 ```
 
-:::
+### 3. defineAsyncComponent
+
+```ts
+defineAsyncComponent(() => import('@/components/TestCompo.vue'));
+```
 
 ## Props
 

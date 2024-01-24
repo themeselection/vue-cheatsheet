@@ -11,13 +11,13 @@ interface Props {
 }
 defineProps<Props>()
 
-// define Props using Object
+// define props using Object
 defineProps({
     title: String, 
     id: Number
 })
 
-// define Props using Array
+// define props using Array
 defineProps(['title', 'id'])
 
 // Extending props with existing interface 
@@ -65,7 +65,7 @@ defineProps({
   },
 
   // Custom validator function
-  // full props passed as 2nd argument in 3.4+
+  // All props passed as 2nd argument in 3.4+
   propF: {
     validator(value, props) {
       // The value must match one of these strings
@@ -83,14 +83,14 @@ defineProps({
     }
   },
 
-  // Absent Boolean prop will cast to false 
+  // If you don't pass value to prop by default it will take false.
   propH: Boolean,
 
-//   Change the default behavior of Boolean prop to set absent value to false by setting the default value
+  // Change the default behavior of Boolean type prop.
   propI: {
     type: Boolean, 
     default: undefined,
-  }  ,
+  },
 
 })
 ```
@@ -111,7 +111,7 @@ const title = ref('vuexy')
 </script>
 
 <template>
-    <!-- Prop binding -->
+    <!-- prop binding -->
     <MyComponent :title='title'></MyComponent>
 
     <!-- use v-bind directive prop to bind multiple props -->
@@ -121,11 +121,11 @@ const title = ref('vuexy')
     <Post :id :title />
 
     <!-- Boolean Casting -->
-    
+
     <!-- equivalent of passing :disabled="true" -->
     <MyComponent disabled />
 
     <!-- equivalent of passing :disabled="false" -->
-<MyComponent />
+    <MyComponent />
 </template>
 ```
