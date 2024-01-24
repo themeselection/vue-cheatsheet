@@ -22,6 +22,13 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Introduction',
+        items: [
+          { text: 'Contributing', link: '/contributing' },
+          { text: 'Changelog', link: '/changelog' },
+        ],
+      },
+      {
         text: 'Cheatsheet',
         items: [
           { text: 'Basic', link: '/basic' },
