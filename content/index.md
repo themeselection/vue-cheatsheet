@@ -4,7 +4,10 @@ layout: home
 
 hero:
   name: "Vue Cheatsheet"
-  tagline: "One and only cheatsheet you need"
+  tagline: The only cheatsheet you will ever need
+  image:
+    src: /hero.png
+    alt: Vue Cheatsheet
   actions:
     - theme: brand
       text: Let's Start
