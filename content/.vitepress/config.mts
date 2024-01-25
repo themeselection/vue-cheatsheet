@@ -23,8 +23,7 @@ export default defineConfig({
         items: [
           { text: 'Basic', link: '/basic' },
           { text: 'Reactivity', link: '/reactivity' },
-          { text: 'Form Inputs', link: '/form-input' },
-          { text: 'Lifecycle Hooks', link: '/lifecycle-hooks' },
+          { text: 'Forms', link: '/forms' },
           { text: 'Component', link: '/component' },
           { text: 'Props', link: '/props' },
           { text: 'Events', link: '/events' },

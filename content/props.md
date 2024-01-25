@@ -129,3 +129,37 @@ const title = ref('vuexy')
     <MyComponent />
 </template>
 ```
+
+## Two Way binding
+
+```js
+// two way binding with defineModel
+const model = defineModel()
+
+<input v-model="model" />
+
+// making the v-model required
+const model = defineModel({ required: true })
+
+// providing a default value
+const model = defineModel({ default: 0 })
+
+// multiple v-model binding
+const firstName = defineModel('firstName')
+const lastName = defineModel('lastName')
+
+<input type="text" v-model="firstName" />
+<input type="text" v-model="lastName" />
+
+// Handling v-model modifier
+const [model, modifiers] = defineModel({
+  set(value) {
+    if (modifiers.capitalize) {
+      return value.charAt(0).toUpperCase() + value.slice(1)
+    }
+    return value
+  }
+})
+
+<MyComponent v-model.capitalize="myText" />
+```

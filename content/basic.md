@@ -214,7 +214,20 @@ onMounted(() => input.value.focus())
 </template>
 ```
 
-## Events
+## Lifecycle Hooks
+
+| Hooks           |      Descpriton                         |
+| :-------------: | :-------------------------------------: |
+| beforeCreate    | After the instance has been initialized |
+| created   | After the instance is created                 |
+| onBeforeMount   | Before mounting DOM                     |
+| onMounted       |   DOM can be accessed                   |
+| onBeforeUpdate  |   Reactive data changes                 |
+| onUpdated       |   DOM has been updated                  |
+| onBeforeUnmount |   Component still complete              |
+| onUnmounted     |   Teardown complete                     |
+
+## Event Handling
 
 ```vue
 
@@ -277,20 +290,20 @@ onMounted(() => input.value.focus())
 
 | Key Modifier | Example Usage |
 | ------------ | ------------- |
-| Enter | `<input v-on:keyup.enter="methodName">` |
-| Tab | `<input v-on:keyup.tab="methodName">` |
-| Delete (or Backspace) | `<input v-on:keyup.delete="methodName">` |
-| Escape | `<input v-on:keyup.esc="methodName">` |
-| Space | `<input v-on:keyup.space="methodName">` |
-| Arrow Up | `<input v-on:keyup.arrow-up="methodName"></input>` |
-| Arrow Down | `<input v-on:keyup.arrow-down="methodName"></input>` |
-| Arrow Left | `<input v-on:keyup.arrow-left="methodName"></input>` |
-| Arrow Right | `<input v-on:keyup.arrow-right="methodName"></input>` |
+| keyup.enter | Triggers Enter key up event |
+| keyup.tab | Triggers Tab key up event |
+| keyup.delete | Triggers Delete or Backspace key up event |
+| keyup.esc | Triggers Escape key up event |
+| keyup.space | Triggers Space key up event |
+| keyup.arrow-up | Triggers arrow up key up event |
+| keyup.arrow-down | Triggers arrow down key up event |
+| keyup.arrow-left | Triggers arrow left key up event |
+| keyup.arrow-right | Triggers arrow right key up event |
 
 ### Mouse modifiers
 
 | Mouse Modifier | Example Usage |
 | ------------ | ------------- |
-| Left Click | `<button v-on:mousedown.left="leftClickMethod">Left Click</button>` |
-| Right Click | `<button v-on:mousedown.right="rightClickMethod">Right Click</button>` |
-| Middle Click | `<button v-on:mousedown.middle="middleClickMethod">Middle Click</button>` |
+| mousedown.left | Triggers Mouse left click event |
+| mousedown.right | Triggers Mouse right click event |
+| mousedown.middle | Triggers Mouse middle click event |
