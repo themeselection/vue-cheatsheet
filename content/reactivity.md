@@ -81,7 +81,17 @@ const styleObject = reactive({
 
   <!-- Multiple Style Binding -->
   <div :style="styleObject"></div>
+
+  <!-- style binding using v-bind -->
+  <div class='error-text'></div>
 </template>
+
+<style scoped>
+/* dynamically bind color */
+.error-text{
+  color: v-bind(error-color)
+}
+</style>
 ```
 
 ## Events

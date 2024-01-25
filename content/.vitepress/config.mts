@@ -29,14 +29,12 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Cheatsheet',
+        text: 'Vue',
         items: [
           { text: 'Basic', link: '/basic' },
           { text: 'Reactivity', link: '/reactivity' },
           { text: 'Forms', link: '/forms' },
           { text: 'Component', link: '/component' },
-          { text: 'Props', link: '/props' },
-          { text: 'Events', link: '/events' },
           { text: 'Built-in Components', link: '/built-in-components' },
         ]
       }
