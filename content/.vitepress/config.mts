@@ -1,3 +1,4 @@
+import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
 
 const isDev = process.env.NODE_ENV !== 'production'
@@ -15,9 +16,18 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Freebies', link: 'https://themeselection.com/item/category/freebies/' },
+      { text: 'Templates', link: 'https://themeselection.com/item/category/admin-templates/' },
+      { text: 'UI Kits', link: 'https://themeselection.com/item/category/ui-kits/' },
     ],
 
     sidebar: [
+      {
+        text: 'Introduction',
+        items: [
+          { text: 'Contributing', link: '/contributing' },
+          { text: 'Changelog', link: '/changelog' },
+        ],
+      },
       {
         text: 'Cheatsheet',
         items: [
@@ -36,11 +46,18 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/themeselection/vue-cheatsheet' },
       { icon: 'twitter', link: 'https://twitter.com/Theme_Selection' }
     ],
-
-    footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present ThemeSelection'
-    },
+  },
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPFooter\.vue$/,
+          replacement: fileURLToPath(
+            new URL('./theme/components/Footer.vue', import.meta.url)
+          )
+        }
+      ]
+    }
   },
   markdown: {
     // ℹ️ We only enabled this in development so that we can highlight code lines by seeing line number without calculating it in our editor.
@@ -49,5 +66,5 @@ export default defineConfig({
 
     theme: 'dracula',
     math: true,
-  }
+  },
 })

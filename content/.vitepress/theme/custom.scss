@@ -2,6 +2,10 @@
     --vp-c-brand-1: #42b883;
     --vp-c-brand-2: #42d392;
     --vp-c-brand-3: #35eb9a;
+
+    // Hero title
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient( 120deg, var(--vp-c-brand-3) 30%, var(--vp-c-brand-1) );
 }
 
 // For the `Dracula` theme in the light mode : https://github.com/vuejs/vitepress/issues/3435 
@@ -24,4 +28,35 @@
     --vp-code-tab-text-color: rgba(235, 235, 245, 0.6);
     --vp-code-tab-hover-text-color: rgba(255, 255, 245, 0.86);
     --vp-code-tab-active-text-color: rgba(255, 255, 245, 0.86);
-  }
+}
+
+.VPButton.brand {
+    background-color: var(--vp-c-brand-2) !important;
+}
+
+@media (min-width: 960px) {
+    .tagline {
+        font-size: 22px !important;
+        opacity: 80%;
+    }
+}
+
+.VPFeature {
+    background: transparent !important;
+    border-color: var(--vp-c-gray-3) !important;
+}
+
+.VPHero {
+    padding-bottom: 16px !important;
+}
+.VPHero .image-src {
+    position: static !important;
+    transform: none !important;
+}
+
+// Restore search bg
+@media (min-width: 768px) {
+    button.DocSearch-Button {
+        background-color: var(--vp-c-bg-alt);
+    }
+}
