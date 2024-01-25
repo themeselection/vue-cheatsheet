@@ -53,3 +53,10 @@
     position: static !important;
     transform: none !important;
 }
+
+// Restore search bg
+@media (min-width: 768px) {
+    button.DocSearch-Button {
+        background-color: var(--vp-c-bg-alt);
+    }
+}
