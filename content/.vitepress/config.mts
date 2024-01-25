@@ -62,7 +62,10 @@ export default defineConfig({
     lineNumbers: false,
     toc: { level: [1, 2,] },
 
-    theme: 'dracula',
+    theme: {
+      light: 'github-light',
+      dark: 'dracula'
+    },
     math: true,
   },
 })
