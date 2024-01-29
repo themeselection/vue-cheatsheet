@@ -31,12 +31,21 @@ export default defineConfig({
       {
         text: 'Vue',
         items: [
-          { text: 'Basic', link: '/basic' },
-          { text: 'Reactivity', link: '/reactivity' },
-          { text: 'Forms', link: '/forms' },
-          { text: 'Component', link: '/component' },
-          { text: 'Composable', link: '/composable' },
-          { text: 'Built-in Components', link: '/built-in-components' },
+          { text: 'Basic', link: '/vue/basic.md' },
+          { text: 'Reactivity', link: '/vue/reactivity' },
+          { text: 'Forms', link: '/vue/forms' },
+          { text: 'Component', link: '/vue/component' },
+          { text: 'Composable', link: '/vue/composable' },
+          { text: 'Built-in Components', link: '/vue/built-in-components' },
+        ]
+      },
+      {
+        text: 'Vue Router',
+        items: [
+          { text: 'Basic Route', link: '/vue-router/basic.md' },
+          // { text: 'Dynamic Routing', link: '/reactivity' },
+          // { text: 'Nested Route', link: '/forms' },
+          // { text: 'Aliases', link: '/component' },
         ]
       }
     ],
