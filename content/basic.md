@@ -145,6 +145,15 @@ const id = 'wrapper'
 
 <!-- `Modifiers`: They are special postfixes denoted by 'dot'. -->
 <form @submit.prevent="onSubmit"> ... </form>
+
+<!-- `v-pre`: Skip compilation for this element and all its children. -->
+<span v-pre>{{ this will not be compiled }}</span>
+
+<!-- `v-memo`: Memoize a sub-tree of the template. -->
+<div v-memo="[valueA, valueB]"> ... </div>
+
+<!-- `v-cloak`: Used to hide un-compiled template until it is ready -->
+<div v-cloak>{{ message }}</div>
 ```
 
 ::: info `v-if` vs. `v-show`

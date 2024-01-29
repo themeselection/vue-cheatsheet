@@ -35,6 +35,7 @@ export default defineConfig({
           { text: 'Reactivity', link: '/reactivity' },
           { text: 'Forms', link: '/forms' },
           { text: 'Component', link: '/component' },
+          { text: 'Composable', link: '/composable' },
           { text: 'Built-in Components', link: '/built-in-components' },
         ]
       }

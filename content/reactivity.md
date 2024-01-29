@@ -25,6 +25,20 @@ console.log(state); // {count: 1}
 console.log(state.count); // 1
 ```
 
+## `shallowRef()`
+
+The inner value of a `shallowRef` is stored and exposed as-is, and will not be made deeply reactive
+
+```ts
+const state = shallowRef({ count: 1 })
+
+// does NOT trigger change
+state.value.count = 2
+
+// does trigger change
+state.value = { count: 2 }
+```
+
 ## Computed Property
 
 ```vue
@@ -93,6 +107,10 @@ const styleObject = reactive({
 }
 </style>
 ```
+
+::: tip
+When a `<style>` tag has the scoped attribute, its CSS will apply to elements of the current component only.
+:::
 
 ## Events
 
@@ -179,3 +197,50 @@ const siteData = site;
 
 - **`watchEffect`**: Automatically tracks all accessed reactive properties during its execution, combining dependency tracking and side effect in one step.
 :::
+
+## Utilities
+
+```ts
+const counter = ref(true)
+
+// isRef() -- checks if counter is ref, returns true
+console.log(isRef(counter))
+
+// unRef() -- returns inner value of ref
+console.log(unRef(counter))
+
+// toRef() -- returns existing refs as-is
+toRef(existingRef)
+
+// creates a readonly ref that calls the getter on .value access
+toRef(() => props.foo)
+
+// creates normal refs from non-function values
+// equivalent to ref(1)
+toRef(1)
+
+// toValue() -- normalizes values / refs / getters to values
+toValue(1) //       --> 1
+toValue(ref(1)) //  --> 1
+toValue(() => 1) // --> 1
+
+// toRefs() -- Converts a reactive object to object where each property of object is a ref.
+const state = reactive({
+    foo: 1,
+    bar: 2
+})
+
+const stateAsRefs = toRefs(state)
+
+// nextTick() -- A utility for waiting for the next DOM update flush.
+async function increment() {
+  count.value++
+
+  // DOM not yet updated
+  console.log(document.getElementById('counter').textContent) // 0
+
+  await nextTick()
+  // DOM is now updated
+  console.log(document.getElementById('counter').textContent) // 1
+}
+```
