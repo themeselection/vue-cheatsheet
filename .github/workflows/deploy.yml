@@ -1,5 +1,5 @@
 name: Deploy - Documentation
-run-name: ${{ inputs.is_production && '🚀' || '🧪' }} Deploy
+run-name: 🚀 Deploy
 
 on:
   workflow_dispatch:
