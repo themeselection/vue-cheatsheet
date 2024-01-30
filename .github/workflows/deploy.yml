@@ -25,7 +25,7 @@ jobs:
         run: |
           pnpm i
           pnpm build
-          mv .vitepress/dist .vitepress/${{ env.DEPLOY_DIR_NAME }}
+          mv content/.vitepress/dist content/.vitepress/${{ env.DEPLOY_DIR_NAME }}
         
       - name: 🗄️ Cleanup & Backup
         uses: appleboy/ssh-action@v0.1.5
@@ -46,6 +46,6 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-          source: .vitepress/${{ env.DEPLOY_DIR_NAME }}
+          source: content/.vitepress/${{ env.DEPLOY_DIR_NAME }}
           target: ${{ secrets.PROD_DIR }}
           strip_components: 1
