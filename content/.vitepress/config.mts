@@ -47,6 +47,12 @@ export default defineConfig({
           // { text: 'Nested Route', link: '/forms' },
           // { text: 'Aliases', link: '/component' },
         ]
+      },
+      {
+        text: 'Pinia',
+        items: [
+          { text: 'Basic', link: '/pinia/basic.md' },
+        ]
       }
     ],
 
