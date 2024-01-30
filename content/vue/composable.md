@@ -2,8 +2,8 @@
 
 A composable is a function that leverages Vue's Composition API to encapsulate and reuse stateful logic.
 
-```js
-// mouse.js
+```ts
+// mouse.ts
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // by convention, composable function names start with "use"
@@ -38,7 +38,7 @@ Example: `useMouse()`
 
 ### Input Arguments
 
-```js
+```ts
 import { toValue } from 'vue'
 
 function useFeature(maybeRefOrGetter) {
@@ -51,7 +51,7 @@ function useFeature(maybeRefOrGetter) {
 
 ### Return values
 
-```js
+```ts
 // x and y are refs
 const { x, y } = useMouse()
 ```
