@@ -3,9 +3,9 @@ run-name: 🚀 Deploy
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   deployment:
@@ -48,4 +48,4 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           source: content/.vitepress/${{ env.DEPLOY_DIR_NAME }}
           target: ${{ secrets.PROD_DIR }}
-          strip_components: 1
+          strip_components: 2
