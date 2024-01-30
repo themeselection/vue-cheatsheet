@@ -5,6 +5,7 @@ const isDev = process.env.NODE_ENV !== 'production'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vue-cheatsheet/',
   lang: 'en-US',
   title: "Vue Cheatsheet",
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
