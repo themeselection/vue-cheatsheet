@@ -100,8 +100,6 @@ export default defineConfig({
     math: true,
   },
   transformHtml: async (code, id, ctx) => {
-    if (isDev) return code
-
     return code
       .replace('<head>', `<head>\n${gtmConfig.headScript}`)
       .replace('<body>', `<body>\n${gtmConfig.bodyNoScript}`)
