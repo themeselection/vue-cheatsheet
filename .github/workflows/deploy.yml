@@ -1,0 +1,51 @@
+name: Deploy - Documentation
+run-name: ${{ inputs.is_production && '🚀' || '🧪' }} Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_DIR_NAME: vue-cheatsheet
+    steps:
+      - name: ⚙️ Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+      
+      - name: 📦 Build
+        run: |
+          pnpm i
+          pnpm build
+          mv .vitepress/dist .vitepress/${{ env.DEPLOY_DIR_NAME }}
+        
+      - name: 🗄️ Cleanup & Backup
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSHKEY }}
+          script: |
+            mkdir -p ${{ secrets.PROD_DIR }}
+            cd ${{ secrets.PROD_DIR }}
+            rm -rf ${{ env.DEPLOY_DIR_NAME }}
+          
+      - name: 🚀 Upload documentation
+        uses: appleboy/scp-action@master
+        with:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.SSHKEY }}
+          source: .vitepress/${{ env.DEPLOY_DIR_NAME }}
+          target: ${{ secrets.PROD_DIR }}
+          strip_components: 1
