@@ -5,11 +5,25 @@
 
     // Hero title
     --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient( 120deg, var(--vp-c-brand-3) 30%, var(--vp-c-brand-1) );
+    --vp-home-hero-name-background: var(--vp-c-brand-2);
+
+    --vp-layout-max-width: 1344px;
+    --vp-nav-logo-height: 2.5rem;
+}
+
+.VPHero {
+    &.VPHomeHero {
+        margin-top: 3.5rem;
+        margin-bottom: 2.25rem;
+    }
 }
 
 .VPButton.brand {
-    background-color: var(--vp-c-brand-2) !important;
+    background-color: var(--vp-c-brand-2) !important
+}
+
+.VPButton {
+    border-radius: 0.5rem !important;
 }
 
 @media (min-width: 960px) {
@@ -22,14 +36,27 @@
 .VPFeature {
     background: transparent !important;
     border-color: var(--vp-c-gray-3) !important;
+
+    &:hover {
+        .title {
+            color: var(--vp-c-brand-2) !important;
+        }
+
+        border-color: var(--vp-c-brand-2) !important;
+    }
 }
 
-.VPHero {
-    padding-bottom: 16px !important;
+
+/* Style home logo */
+.VPContent.is-home .VPHomeHero .VPImage {
+    width: 100%;
+    height: auto;
 }
-.VPHero .image-src {
-    position: static !important;
-    transform: none !important;
+
+.VPContent {
+    .container {
+        max-width: 1280px !important;
+    }
 }
 
 // Restore search bg

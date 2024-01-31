@@ -21,9 +21,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 export default defineConfig({
   base: '/vue-cheatsheet/',
   lang: 'en-US',
-  title: "Vue Cheatsheet",
+  title: 'Vue Cheatsheet',
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
   themeConfig: {
+    logo: '/vue-cheatsheet-logo.png',
+    siteTitle: false,
     search: {
       provider: 'local',
     },
