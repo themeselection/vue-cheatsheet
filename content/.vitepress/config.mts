@@ -39,10 +39,13 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logos/favicon-96x96.png' }],
     ['link', { rel: 'icon', href: '/logos/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/logos/manifest.json' }],
+    ['meta', { property: 'og:title', content: 'Vue Cheatsheet' }],
+    ['meta', { property: 'og:description', content: 'The only Vue cheatsheet you will ever need' }],
+    ['meta', { property: 'og:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
   ],
   themeConfig: {
     logo: '/vue-cheatsheet-logo.png',
-    
+
     siteTitle: false,
     search: {
       provider: 'local',
