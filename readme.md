@@ -1,4 +1,5 @@
 # Vue CheatSheet By ThemeSelection! 🚀
+
 [![Vue CheatSheet](https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png)](https://vue-cheatsheet.themeselection.com)
 
 ## What is Vue CheatSheet?
@@ -9,19 +10,19 @@ It is an interactive cheatsheet of **Vue**, **Vue Router** and **Pinia**. 🎊 T
 
 ## Key Features 🛠
 
- - Comprehensive Coverage of Vue, Vue router, Pinia
- - Interactive search
- - Concise code snippet
- - Easily copy code snippet and use it
- - Open source
+- Comprehensive Coverage of Vue, Vue router, Pinia
+- Interactive search
+- Concise code snippet
+- Easily copy code snippet and use it
+- Open source
 
 ## Contents 🤩
 
 | Vue CheatSheet | URL |
 |--|--|
-| Vue | https://vue-cheatsheet.themeselection.com/vue/basic.html |
-| Vue Router | https://vue-cheatsheet.themeselection.com/vue-router/basic.html |
-| Pinia | https://vue-cheatsheet.themeselection.com/pinia/basic.html |
+| Vue | <https://vue-cheatsheet.themeselection.com/vue/basic.html> |
+| Vue Router | <https://vue-cheatsheet.themeselection.com/vue-router/basic.html> |
+| Pinia | <https://vue-cheatsheet.themeselection.com/pinia/basic.html> |
 
 ## Contributing 📝
 
@@ -32,13 +33,14 @@ Before adding a pull request, please see the **[contributing guidelines](https:/
 All **suggestions/PR** are welcome!
 
 ## Credits 🤘
+
 | Name | URL |
 |--|--|
-| Vue | https://vuejs.org |
-| Vue Router | https://router.vuejs.org |
-| Pinia | https://pinia.vuejs.org |
-| Vitepre | https://vitepress.dev |
-| Python Cheatsheet | https://www.pythoncheatsheet.org |
+| Vue | <https://vuejs.org> |
+| Vue Router | <https://router.vuejs.org> |
+| Pinia | <https://pinia.vuejs.org> |
+| Vitepre | <https://vitepress.dev> |
+| Python Cheatsheet | <https://www.pythoncheatsheet.org> |
 
 ## Copyright and license ©
 
@@ -56,14 +58,13 @@ If you want to [Download Free Admin Templates](https://themeselection.com/produc
 
 ## Useful Links 🔗
 
-
-* [More products](https://themeselection.com/products/) from ThemeSelection
-* [Freebies](https://themeselection.com/products/category/freebies/) from ThemeSelection
-* [Blog](https://themeselection.com/blog/)
+- [More products](https://themeselection.com/products/) from ThemeSelection
+- [Freebies](https://themeselection.com/products/category/freebies/) from ThemeSelection
+- [Blog](https://themeselection.com/blog/)
 
 ## Social Media 😇
 
-* Twitter : [https://twitter.com/themeselect](https://twitter.com/themeselect)
-* Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
-* Pintrest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
-* Instagram : [https://www.instagram.com/themeselect_official/](https://www.instagram.com/themeselect_official/)
+- Twitter : [https://twitter.com/themeselect](https://twitter.com/themeselect)
+- Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
+- Pintrest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
+- Instagram : [https://www.instagram.com/themeselect_official/](https://www.instagram.com/themeselect_official/)
