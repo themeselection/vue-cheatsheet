@@ -63,7 +63,7 @@ If you want to [Download Free Admin Templates](https://themeselection.com/produc
 
 ## Social Media 😇
 
-* Twitter : [https://twitter.com/themeselect](https://twitter.com/themeselect)
-* Facebook : [https://www.facebook.com/ThemeSelections/](https://www.facebook.com/ThemeSelections/)
-* Pintrest : [https://pinterest.com/themeselect/](https://pinterest.com/themeselect/)
-* Instagram : [https://www.instagram.com/themeselect_official/](https://www.instagram.com/themeselect_official/)
+* Twitter : [https://twitter.com/Theme_Selection](https://twitter.com/Theme_Selection)
+* Facebook : [https://www.facebook.com/ThemeSelections](https://www.facebook.com/ThemeSelections/)
+* Pintrest : [https://www.pinterest.com/themeselection/](https://www.pinterest.com/themeselection/)
+* Instagram : [https://www.instagram.com/themeselection/](https://www.instagram.com/themeselection/)
