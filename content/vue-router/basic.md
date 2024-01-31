@@ -10,8 +10,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('./views/HomeView.vue')
+      name: 'home', // "home" will be route name
+      component: () => import('./views/HomeView.vue') // Always lazy load route components
     },
     {
       path: '/about',
@@ -28,10 +28,47 @@ Use `RouterView` to render the matched component for the current route, and use 
 <template>
  <nav>
    <RouterLink to="/">Home</RouterLink>
-   <RouterLink :to="{ name: 'about' }">About</RouterLink>  <!-- Named Routes -->
+
+   <!-- Use route name via object syntax -->
+   <RouterLink :to="{ name: 'about' }">About</RouterLink>
  </nav>
  <RouterView />
 </template>
+```
+
+## Programmatic Navigation
+
+Aside from using `<RouterLink>` to create anchor tags for declarative navigation, we can do this programmatically using the router's instance methods.
+
+| Declarative        |      Programmatic      |
+| ------------- | :-----------: |
+| `<RouterLink :to="...">`   | `router.push(...)` |
+| `<RouterLink :to="..." replace>`  | `router.replace(...)`    |
+| `window.history.go(n)`  |   `router.go(1)`    |
+
+The argument can be a string path, or a location descriptor object.
+
+```ts
+// literal string path
+router.push('/users/eduardo')
+
+// object with path
+router.push({ path: '/users/eduardo' })
+
+// named route with params to let the router build the url
+router.push({ name: 'user', params: { username: 'eduardo' } })
+
+// with query, resulting in /register?plan=private
+router.replace({ path: '/register', query: { plan: 'private' } })
+
+// with hash, resulting in /about#team
+router.replace({ path: '/about', hash: '#team' })
+
+// go forward by one record, the same as router.forward()
+router.go(1)
+
+// go back by one record, the same as router.back()
+router.go(-1)
 ```
 
 ## Dynamic Routing
@@ -177,41 +214,6 @@ const router = createRouter({
 </template>
 ```
 
-## Programmatic Navigation
-
-Aside from using `<RouterLink>` to create anchor tags for declarative navigation, we can do this programmatically using the router's instance methods.
-
-| Declarative        |      Programmatic      |
-| ------------- | :-----------: |
-| `<RouterLink :to="...">`   | `router.push(...)` |
-| `<RouterLink :to="..." replace>`  | `router.replace(...)`    |
-| `window.history.go(n)`  |   `router.go(1)`    |
-
-The argument can be a string path, or a location descriptor object.
-
-```ts
-// literal string path
-router.push('/users/eduardo')
-
-// object with path
-router.push({ path: '/users/eduardo' })
-
-// named route with params to let the router build the url
-router.push({ name: 'user', params: { username: 'eduardo' } })
-
-// with query, resulting in /register?plan=private
-router.replace({ path: '/register', query: { plan: 'private' } })
-
-// with hash, resulting in /about#team
-router.replace({ path: '/about', hash: '#team' })
-
-// go forward by one record, the same as router.forward()
-router.go(1)
-
-// go back by one record, the same as router.back()
-router.go(-1)
-```
-
 ## Named Views
 
 ```ts
@@ -304,16 +306,19 @@ const User = {
   
 const routes = [
   // Boolean mode
-  { path: '/user/:id',
+  { 
+    path: '/user/:id',
     component: User,
     props: true
   },
+
   // Object mode
   {
     path: '/user/:id',
     components: { default: User, sidebar: Sidebar },
     props: { default: true, sidebar: false }
   },
+    
   // Function mode
   {
     path: '/search',
