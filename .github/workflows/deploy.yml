@@ -34,5 +34,5 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           source: content/.vitepress/html
           target: ${{ secrets.TARGET_DIR }}
-          strip_components: 2
+          strip_components: 3
           rm: true
