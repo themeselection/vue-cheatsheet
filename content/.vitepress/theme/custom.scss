@@ -65,3 +65,8 @@
         background-color: var(--vp-c-bg-alt);
     }
 }
+
+// Enable below after: https://github.com/vuejs/vitepress/pull/3522
+// .VPNav:has(~ .is-home) .title > span {
+//     display: none;
+// }

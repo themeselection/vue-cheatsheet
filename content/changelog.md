@@ -1,5 +1,5 @@
 # Changelog
 
-## 2024-01-XX
+## 2024-01-31
 
 - Initial Release
