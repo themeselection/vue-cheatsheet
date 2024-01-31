@@ -21,6 +21,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 export default defineConfig({
   lang: 'en-US',
   title: 'Vue Cheatsheet',
+  lastUpdated: true,
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
   head: [
     ['link', { rel: 'icon', href: '/logos/favicon.ico' }],
@@ -92,6 +93,10 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/themeselection/vue-cheatsheet' },
       { icon: 'twitter', link: 'https://twitter.com/Theme_Selection' }
     ],
+
+    editLink: {
+      pattern: 'https://github.com/themeselection/vue-cheatsheet/edit/main/content/:path'
+    }
   },
   vite: {
     resolve: {
