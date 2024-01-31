@@ -7,6 +7,7 @@ import SubscribeForm from './SubscribeForm.vue';
 const { frontmatter } = useData()
 const { hasSidebar } = useSidebar()
 
+
 const firstColLinks = [
     { title: 'Freebies', link: 'https://themeselection.com/item/category/download-free-admin-templates/' },
     { title: 'UI Kits', link: 'https://themeselection.com/item/category/ui-kits/' },
@@ -21,9 +22,9 @@ const secondColLinks = [
 </script>
 
 <template>
-    <footer v-if="frontmatter.footer !== false" class="pt-12 px-6 bg-gray-100 dark:bg-zinc-800 sm:px-12 lg:px-16"
+    <footer v-if="frontmatter.footer !== false" class="pt-12 bg-gray-100 dark:bg-zinc-800"
         :class="{ 'hidden': hasSidebar }">
-        <div class="container mx-auto flex flex-wrap gap-y-14 gap-x-10 lg:justify-between  gap-y-4 mb-10">
+        <div class="container mx-auto flex flex-wrap gap-10 lg:justify-between mb-10 px-6 sm:px-12 lg:px-16">
             <div class="flex flex-col gap-4 items-start">
                 <a v-for="(link, index) in firstColLinks" :key="index" target="_blank" rel="noreferrer" :href="link.link"
                     class="text-gray-500 hover:text-[var(--vp-c-brand-1)] dark:text-gray-400 dark:hover:text-[var(--vp-c-brand-1)]">{{
@@ -41,12 +42,10 @@ const secondColLinks = [
                 <SocialLinks class="mt-6"></SocialLinks>
             </div>
         </div>
-        <hr>
-
-        <div class="container mx-auto flex items-center justify-between border-gray-300 dark:border-zinc-700 pt-8 pb-6 ">
-            <a href="https://themeselection.com/" target="_blank">
-                <img src="/brand-logo-small.png" alt="ThemeSelection" height="38" class="h-10" />
-            </a>
+        <hr class="divider">
+        <div
+            class="container mx-auto flex flex-wrap items-center justify-between border-gray-300 dark:border-zinc-700 pt-8 pb-6 gap-3 px-6 sm:px-12 lg:px-16">
+            <a href="https://themeselection.com/" target="_blank" class="themeselection-logo"> </a>
             <div class="flex items-center gap-x-1">
                 <span>© 2024-Present, Made with</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
@@ -60,3 +59,26 @@ const secondColLinks = [
         </div>
     </footer>
 </template>
+
+<style scoped lang="scss">
+html {
+
+    .themeselection-logo {
+        width: 192px;
+        height: 40px;
+        background-image: url('/brand-logo-small-light.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &.dark {
+        .divider {
+            border-color: var(--vp-c-gray-3);
+        }
+
+        .themeselection-logo {
+            background-image: url('/brand-logo-small-dark.png');
+        }
+    }
+}
+</style>
