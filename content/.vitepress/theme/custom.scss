@@ -13,7 +13,7 @@
 
 .VPHero {
     &.VPHomeHero {
-        margin-top: 3.5rem;
+        margin-top: 1.25rem;
         margin-bottom: 2.25rem;
     }
 }
@@ -63,6 +63,13 @@
 @media (min-width: 768px) {
     button.DocSearch-Button {
         background-color: var(--vp-c-bg-alt);
+    }
+
+    .VPHero {
+        &.VPHomeHero {
+            margin-top: 3.5rem;
+            margin-bottom: 2.25rem;
+        }
     }
 }
 
