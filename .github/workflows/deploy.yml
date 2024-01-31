@@ -24,15 +24,6 @@ jobs:
           pnpm i
           pnpm build
           mv content/.vitepress/dist content/.vitepress/html
-        
-      - name: 🗄️ Cleanup & Preparation
-        uses: appleboy/ssh-action@v0.1.5
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSHKEY }}
-          script: mkdir -p ${{ secrets.TARGET_DIR }}
           
       - name: 🚀 Upload
         uses: appleboy/scp-action@master
