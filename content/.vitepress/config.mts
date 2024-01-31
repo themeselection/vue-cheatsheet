@@ -59,7 +59,7 @@ export default defineConfig({
       {
         text: 'Vue Router',
         items: [
-          { text: 'Basic Routing', link: '/vue-router/basic.md' },
+          { text: 'Basic', link: '/vue-router/basic.md' },
           { text: 'Advanced', link: '/vue-router/advanced.md' },
         ]
       },
