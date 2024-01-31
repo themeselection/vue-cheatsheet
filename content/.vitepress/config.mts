@@ -59,10 +59,8 @@ export default defineConfig({
       {
         text: 'Vue Router',
         items: [
-          { text: 'Basic Route', link: '/vue-router/basic.md' },
-          // { text: 'Dynamic Routing', link: '/reactivity' },
-          // { text: 'Nested Route', link: '/forms' },
-          // { text: 'Aliases', link: '/component' },
+          { text: 'Basic Routing', link: '/vue-router/basic.md' },
+          { text: 'Advanced', link: '/vue-router/advanced.md' },
         ]
       },
       {

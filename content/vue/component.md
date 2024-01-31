@@ -231,7 +231,7 @@ const title = ref('vuexy')
 
 ### Two Way binding
 
-```js
+```ts
 // two way binding with defineModel
 const model = defineModel()
 
