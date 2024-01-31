@@ -1,4 +1,6 @@
 {
+  "name": "vue-cheatsheet",
+  "version": "0.0.0",
   "scripts": {
     "dev": "vitepress dev content",
     "build": "vitepress build content",

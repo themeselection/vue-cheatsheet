@@ -19,12 +19,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/vue-cheatsheet/',
   lang: 'en-US',
   title: 'Vue Cheatsheet',
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
+  head: [
+    ['link', { rel: 'icon', href: '/logos/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-57x57.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-60x60.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-72x72.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-76x76.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-114x114.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-120x120.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-144x144.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-152x152.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-180x180.png' }],
+    ['link', { rel: 'icon', href: '/logos/android-icon-192x192.png' }],
+    ['link', { rel: 'icon', href: '/logos/favicon-32x32.png' }],
+    ['link', { rel: 'icon', href: '/logos/favicon-96x96.png' }],
+    ['link', { rel: 'icon', href: '/logos/favicon-16x16.png' }],
+    ['link', { rel: 'manifest', href: '/logos/manifest.json' }],
+  ],
   themeConfig: {
     logo: '/vue-cheatsheet-logo.png',
+    
     siteTitle: false,
     search: {
       provider: 'local',

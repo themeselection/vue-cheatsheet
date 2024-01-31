@@ -20,7 +20,7 @@ features:
   - title: Vue
     icon: 
       src: /vue-logo.png
-    details: Accelerate your vue learning with our comprehensive cheatsheet
+    details: Accelerate your vue learning & improve your skills with our comprehensive cheatsheet
     link: /vue/basic
   - title: Vue Router
     icon: 
