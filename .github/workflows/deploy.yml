@@ -10,8 +10,6 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    env:
-      DEPLOY_DIR_NAME: html
     steps:
       - name: ⚙️ Setup pnpm
         uses: pnpm/action-setup@v2
@@ -25,27 +23,25 @@ jobs:
         run: |
           pnpm i
           pnpm build
-          mv content/.vitepress/dist content/.vitepress/${{ env.DEPLOY_DIR_NAME }}
+          mv content/.vitepress/dist content/.vitepress/html
         
-      - name: 🗄️ Cleanup & Backup
+      - name: 🗄️ Cleanup & Preparation
         uses: appleboy/ssh-action@v0.1.5
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          script: |
-            mkdir -p ${{ secrets.PROD_DIR }}
-            cd ${{ secrets.PROD_DIR }}
-            rm -rf ${{ env.DEPLOY_DIR_NAME }}
+          script: mkdir -p ${{ secrets.TARGET_DIR }}
           
-      - name: 🚀 Upload documentation
+      - name: 🚀 Upload
         uses: appleboy/scp-action@master
         with:
           HOST: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-          source: content/.vitepress/${{ env.DEPLOY_DIR_NAME }}
-          target: ${{ secrets.PROD_DIR }}
+          source: content/.vitepress/html
+          target: ${{ secrets.TARGET_DIR }}
           strip_components: 2
+          rm: true
