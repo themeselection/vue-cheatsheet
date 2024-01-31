@@ -19,7 +19,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/vue-cheatsheet/',
   lang: 'en-US',
   title: 'Vue Cheatsheet',
   description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
