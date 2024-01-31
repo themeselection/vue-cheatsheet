@@ -3,15 +3,15 @@ run-name: 🚀 Deploy
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 jobs:
   deployment:
     runs-on: ubuntu-latest
     env:
-      DEPLOY_DIR_NAME: vue-cheatsheet
+      DEPLOY_DIR_NAME: html
     steps:
       - name: ⚙️ Setup pnpm
         uses: pnpm/action-setup@v2
