@@ -49,6 +49,9 @@ export default defineConfig({
     siteTitle: false,
     search: {
       provider: 'local',
+      options: {
+        detailedView: true,
+      },
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
