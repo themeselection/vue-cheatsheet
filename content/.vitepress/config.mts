@@ -42,6 +42,12 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'Vue Cheatsheet' }],
     ['meta', { property: 'og:description', content: 'The only Vue cheatsheet you will ever need' }],
     ['meta', { property: 'og:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
+    ['meta', { property: 'twitter:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
+    ['meta', { property: 'twitter:title', content: 'Vue.js CheatSheet By ThemeSelection' }],
+    ['meta', { property: 'twitter:description', content: 'Accelerate your vue learning & improve your skills with our comprehensive cheatsheet' }],
+    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { property: 'twitter:site', content: '@Theme_Selection' }],
+    ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],
   ],
   themeConfig: {
     logo: '/vue-cheatsheet-logo.png',
