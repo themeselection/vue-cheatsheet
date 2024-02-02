@@ -1,6 +1,6 @@
 # Vue CheatSheet By ThemeSelection! 🚀
 
-[![Vue CheatSheet](https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png)](https://vue-cheatsheet.themeselection.com)
+[![Vue CheatSheet](https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/marketing/github-banner.png)](https://vue-cheatsheet.themeselection.com)
 
 ## What is Vue CheatSheet?
 
