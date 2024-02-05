@@ -48,11 +48,11 @@ All **suggestions/PR** are welcome!
 
 ## Note 📒
 
-**We request you to keep ThemeSelection credit link if you share this tool or add it on blog post.**
+**We request you keep the ThemeSelection credit link if you share this tool or add it to a blog post.**
 
 ## Looking For Premium Admin Templates ??
 
-**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/item/category/bootstrap-admin-template/), [VueJS Admin Templates](https://themeselection.com/item/category/vuejs-admin-templates/), [Nuxt Admmin Dashboard](https://themeselection.com/item/category/nuxt-admin-template/), [Laravel Admin Templates](https://themeselection.com/item/category/laravel-admin-templates/) HTML Themes and [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/) to create your applications faster!.
+**[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use Free and Premium [Bootstrap Admin Templates](https://themeselection.com/item/category/bootstrap-admin-template/), [VueJS Admin Templates](https://themeselection.com/item/category/vuejs-admin-templates/), [Nuxt Admin Dashboard](https://themeselection.com/item/category/nuxt-admin-template/), [Laravel Admin Templates](https://themeselection.com/item/category/laravel-admin-templates/) HTML Themes and [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/) to create your applications faster!.
 
 If you want to [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/m) then do visit [ThemeSelection](https://themeselection.com/).
 
