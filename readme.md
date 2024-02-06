@@ -4,9 +4,9 @@
 
 ## What is Vue CheatSheet?
 
-It is an interactive cheatsheet of **Vue**, **Vue Router** and, **Pinia**. 🎊 The only **[Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)** you will ever need whether you are using Vue, Vue Router & Pinia in your Vue project or starting a new Vue project.
+It is an interactive cheatsheet of **Vue**, **Vue Router**, and **Pinia**. 🎊 The only **[Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)** you will ever need whether you are using Vue, Vue Router & Pinia in your Vue project or starting a new Vue project.
 
-[Vue CheatSheet](https://vue-cheatsheet.themeselection.com) is aimed towards a large community of Vue users who find it difficult to search for Vue, Vue Router and Pinia.
+[Vue CheatSheet](https://vue-cheatsheet.themeselection.com) is aimed at a large community of Vue users who find it difficult to search for Vue, Vue Router, and Pinia.
 
 ## Key Features 🛠
 
