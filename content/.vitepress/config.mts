@@ -9,7 +9,7 @@ const gtmConfig = {
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5DDHKGP');</script>
+})(window,document,'script','dataLayer','GTM-PVB8N2Q');</script>
 <!-- End Google Tag Manager -->`,
   bodyNoScript: `<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP"
@@ -22,7 +22,7 @@ export default defineConfig({
   lang: 'en-US',
   title: 'Vue Cheatsheet',
   lastUpdated: true,
-  description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
+  description: "The one and only vue cheatsheet you need for VueJS by ThemeSelection",
   head: [
     ['link', { rel: 'icon', href: '/logos/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-57x57.png' }],
