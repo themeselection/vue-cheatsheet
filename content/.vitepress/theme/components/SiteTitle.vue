@@ -8,5 +8,5 @@ const isHome = computed(() => page.value.frontmatter?.layout === 'home')
 </script>
 
 <template>
-    <span v-if="!isHome">{{ site.title }}</span>
+    <span v-if="!isHome">{{ site.title.split(' ').slice(0, 2).join(' ') }}</span>
 </template>

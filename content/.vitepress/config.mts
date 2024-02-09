@@ -20,9 +20,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  title: 'Vue Cheatsheet',
+  title: 'Vue Cheatsheet By ThemeSelection',
   lastUpdated: true,
-  description: "The one and only vue cheatsheet you need for VueJS by ThemeSelection",
+  description: "The one and only Vue cheatsheet you need for VueJS by ThemeSelection",
   head: [
     ['link', { rel: 'icon', href: '/logos/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-57x57.png' }],
@@ -40,7 +40,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logos/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/logos/manifest.json' }],
     ['meta', { property: 'og:title', content: 'Vue Cheatsheet' }],
-    ['meta', { property: 'og:description', content: 'The only Vue cheatsheet you will ever need' }],
+    ['meta', { property: 'og:description', content: 'The only VueJS cheatsheet you will ever need' }],
     ['meta', { property: 'og:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
     ['meta', { property: 'twitter:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
     ['meta', { property: 'twitter:title', content: 'Vue.js CheatSheet By ThemeSelection' }],
@@ -48,9 +48,10 @@ export default defineConfig({
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { property: 'twitter:site', content: '@Theme_Selection' }],
     ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],
+    ['meta', { property: 'keywords', content: 'Vue 3 Cheatsheet, VueJS Cheatsheet, Vue JS Cheatsheet' }]
   ],
   themeConfig: {
-    logo: '/vue-cheatsheet-logo.png',
+    logo: { src: '/vue-cheatsheet-logo.png', alt: 'Vue Cheatsheet' },
 
     siteTitle: false,
     search: {
