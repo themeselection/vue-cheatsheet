@@ -2,7 +2,7 @@
 
 Great! We appreciate your willingness to contribute!
 
-The following are some guidelines for contributing to the Python cheatsheet. These guidelines are meant to provide direction, but they are not strict rules. Please use your own judgment, and feel free to suggest changes to [this document](https://github.com/themeselection/vue-cheatsheet/blob/master/src/pages/contributing.md).
+The following are some guidelines for contributing to the Vue cheatsheet. These guidelines are meant to provide direction, but they are not strict rules. Please use your own judgment, and feel free to suggest changes to [this document](https://github.com/themeselection/vue-cheatsheet/blob/master/src/pages/contributing.md).
 
 ## Running the project locally
 
