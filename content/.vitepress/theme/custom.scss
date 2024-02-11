@@ -1,79 +1,78 @@
 :root {
-    --vp-c-brand-1: #42b883;
-    --vp-c-brand-2: #42d392;
-    --vp-c-brand-3: #35eb9a;
+  --vp-c-brand-1: #42b883;
+  --vp-c-brand-2: #42d392;
+  --vp-c-brand-3: #35eb9a;
 
-    // Hero title
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: var(--vp-c-brand-2);
+  // Hero title
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: var(--vp-c-brand-2);
 
-    --vp-layout-max-width: 1344px;
-    --vp-nav-logo-height: 2.5rem;
+  --vp-layout-max-width: 1344px;
+  --vp-nav-logo-height: 2.5rem;
 }
 
 .VPHero {
-    &.VPHomeHero {
-        margin-top: 1.25rem;
-        margin-bottom: 2.25rem;
-    }
+  &.VPHomeHero {
+    margin-top: 1.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 .VPButton.brand {
-    background-color: var(--vp-c-brand-2) !important
+  background-color: var(--vp-c-brand-2) !important;
 }
 
 .VPButton {
-    border-radius: 0.5rem !important;
+  border-radius: 0.5rem !important;
 }
 
 @media (min-width: 960px) {
-    .tagline {
-        font-size: 22px !important;
-        opacity: 80%;
-    }
+  .tagline {
+    font-size: 22px !important;
+    opacity: 80%;
+  }
 }
 
 .VPFeature {
-    background: transparent !important;
-    border-color: var(--vp-c-gray-3) !important;
+  background: transparent !important;
+  border-color: var(--vp-c-gray-3) !important;
 
-    &:hover {
-        .title {
-            color: var(--vp-c-brand-2) !important;
-        }
-
-        border-color: var(--vp-c-brand-2) !important;
+  &:hover {
+    .title {
+      color: var(--vp-c-brand-2) !important;
     }
-}
 
+    border-color: var(--vp-c-brand-2) !important;
+  }
+}
 
 /* Style home logo */
 .VPContent.is-home .VPHomeHero .VPImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .VPContent {
-    .container {
-        max-width: 1280px !important;
-    }
+  .container {
+    max-width: 1280px !important;
+  }
 }
 
 // Restore search bg
 @media (min-width: 768px) {
-    button.DocSearch-Button {
-        background-color: var(--vp-c-bg-alt);
-    }
+  button.DocSearch-Button {
+    background-color: var(--vp-c-bg-alt);
+  }
 
-    .VPHero {
-        &.VPHomeHero {
-            margin-top: 3.5rem;
-            margin-bottom: 2.25rem;
-        }
+  .VPHero {
+    &.VPHomeHero {
+      margin-top: 3.5rem;
+      margin-bottom: 2.25rem;
     }
+  }
 }
 
 // Enable below after: https://github.com/vuejs/vitepress/pull/3522
-// .VPNav:has(~ .is-home) .title > span {
-//     display: none;
-// }
+.VPNav:has(~ .is-home) .title > span {
+  display: none;
+}
