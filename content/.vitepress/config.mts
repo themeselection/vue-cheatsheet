@@ -44,7 +44,7 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
     ['meta', { property: 'twitter:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
     ['meta', { property: 'twitter:title', content: 'Vue.js CheatSheet By ThemeSelection' }],
-    ['meta', { property: 'twitter:description', content: 'Accelerate your vue learning & improve your skills with our comprehensive cheatsheet' }],
+    ['meta', { property: 'twitter:description', content: 'Accelerate your vue learning & improve your skills with our comprehensive Vue 3 cheatsheet.' }],
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { property: 'twitter:site', content: '@Theme_Selection' }],
     ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],

@@ -21,7 +21,7 @@ features:
     icon: 
       src: /vue-logo.png
       alt: 'Vue'
-    details: Accelerate your vue learning & improve your skills with our comprehensive cheatsheet
+    details: Accelerate your vue learning & improve your skills with our comprehensive Vue 3 cheatsheet.
     link: /vue/basic
   - title: Vue Router
     icon: 
@@ -33,6 +33,6 @@ features:
     icon: 
       src: /pinia-logo.png
       alt: 'Pinia'
-    details: Your Cheatsheet for  Pinia, Perfect for Vue Beginners and Beyond.
+    details: Your vue js cheatsheet for Pina, perfect for vue beginners and beyond.
     link: /pinia/basic
 ---
