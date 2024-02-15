@@ -6,7 +6,7 @@
 
 It is an interactive cheatsheet of **Vue**, **Vue Router**, and **Pinia**. 🎊 The only **[Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)** you will ever need whether you are using Vue, Vue Router & Pinia in your Vue project or starting a new Vue project.
 
-[Vue CheatSheet](https://vue-cheatsheet.themeselection.com) is aimed at a large community of Vue users who find it difficult to search for Vue, Vue Router, and Pinia.
+[Vue JS CheatSheet](https://vue-cheatsheet.themeselection.com) is aimed at a large community of Vue users who find it difficult to search for Vue, Vue Router, and Pinia.
 
 ## Key Features 🛠
 
@@ -44,7 +44,7 @@ All **suggestions/PR** are welcome!
 
 ## Copyright and license ©
 
-[Vue CheatSheet](https://vue-cheatsheet.themeselection.com) is an open source project by [ThemeSelection](https://themeselection.com) that is licensed under [MIT](http://opensource.org/licenses/MIT). ThemeSelection reserves the right to change the license of future releases.
+[Vue 3 CheatSheet](https://vue-cheatsheet.themeselection.com) is an open source project by [ThemeSelection](https://themeselection.com) that is licensed under [MIT](http://opensource.org/licenses/MIT). ThemeSelection reserves the right to change the license of future releases.
 
 ## Note 📒
 
