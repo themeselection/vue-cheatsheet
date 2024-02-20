@@ -53,7 +53,7 @@ export default defineConfig({
   themeConfig: {
     logo: { src: '/vue-cheatsheet-logo.png', alt: 'Vue Cheatsheet' },
 
-    siteTitle: false,
+    siteTitle: 'Vue Cheatsheet',
     search: {
       provider: 'local',
       options: {
