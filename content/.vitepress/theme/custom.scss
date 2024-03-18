@@ -46,7 +46,6 @@
     }
 }
 
-
 /* Style home logo */
 .VPContent.is-home .VPHomeHero .VPImage {
     width: 100%;
@@ -74,6 +73,6 @@
 }
 
 // Enable below after: https://github.com/vuejs/vitepress/pull/3522
-// .VPNav:has(~ .is-home) .title > span {
-//     display: none;
-// }
+.VPNav:has(~ .is-home) .title > span {
+  display: none;
+}
