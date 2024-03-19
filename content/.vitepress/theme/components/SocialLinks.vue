@@ -4,7 +4,7 @@
 
 <template>
     <div class="flex items-center gap-3">
-        <a target="_blank" rel="noreferrer" href="https://github.com/themeselection"
+        <a target="_blank" rel="noreferrer" href="https://github.com/themeselection" alt="ThemeSelection GitHub"
             class="hover:text-[var(--vp-c-brand-1)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
@@ -15,21 +15,21 @@
                 </g>
             </svg>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://twitter.com/Theme_Selection"
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/Theme_Selection" alt="ThemeSelection Twitter"
             class="hover:text-[var(--vp-c-brand-1)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                     d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 0 0-7.86 3v1a10.66 10.66 0 0 1-9-4.53s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5c0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01" />
             </svg>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/ThemeSelections/"
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/ThemeSelections/" alt="ThemeSelection Facebook"
             class="hover:text-[var(--vp-c-brand-1)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                     d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
         </a>
-        <a target="_blank" rel="noreferrer" href="https://dribbble.com/themeselection/"
+        <a target="_blank" rel="noreferrer" href="https://dribbble.com/themeselection/" alt="ThemeSelection Dribbble"
             class="hover:text-[var(--vp-c-brand-1)]">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                 <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
@@ -39,4 +39,5 @@
                 </g>
             </svg>
         </a>
-</div></template>
+    </div>
+</template>

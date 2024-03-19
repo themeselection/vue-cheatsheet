@@ -9,7 +9,7 @@ const gtmConfig = {
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5DDHKGP');</script>
+})(window,document,'script','dataLayer','GTM-PVB8N2Q');</script>
 <!-- End Google Tag Manager -->`,
   bodyNoScript: `<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP"
@@ -20,9 +20,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  title: 'Vue Cheatsheet',
+  title: 'Vue Cheatsheet By ThemeSelection',
   lastUpdated: true,
-  description: "The one and only cheatsheet you need for Vue.js by ThemeSelection",
+  description: "The one and only Vue cheatsheet you need for VueJS by ThemeSelection",
   head: [
     ['link', { rel: 'icon', href: '/logos/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/logos/apple-icon-57x57.png' }],
@@ -39,13 +39,28 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/logos/favicon-96x96.png' }],
     ['link', { rel: 'icon', href: '/logos/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/logos/manifest.json' }],
+    ['meta', { property: 'og:title', content: 'Vue Cheatsheet' }],
+    ['meta', { property: 'og:description', content: 'The only VueJS cheatsheet you will ever need' }],
+    ['meta', { property: 'og:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
+    ['meta', { property: 'twitter:image', content: 'https://ts-assets.b-cdn.net/ts-assets/vue-cheatsheet/github-banner-smm.png' }],
+    ['meta', { property: 'twitter:title', content: 'Vue.js CheatSheet By ThemeSelection' }],
+    ['meta', { property: 'twitter:description', content: 'Accelerate your vue learning & improve your skills with our comprehensive Vue 3 cheatsheet.' }],
+    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { property: 'twitter:site', content: '@Theme_Selection' }],
+    ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],
+    ['meta', { property: 'keywords', content: 'Vue 3 Cheatsheet, VueJS Cheatsheet, Vue JS Cheatsheet' }],
+    ['meta', { property: 'google-site-verification', content: 'Eb4Y887SF6gMOy33YpMZEZLJuVfQHW9E3b8QjoSTDhw' }],
+    ['script', { src: 'https://buttons.github.io/buttons.js' }]
   ],
   themeConfig: {
-    logo: '/vue-cheatsheet-logo.png',
-    
-    siteTitle: false,
+    logo: { src: '/vue-cheatsheet-logo.png', alt: 'Vue Cheatsheet' },
+
+    siteTitle: 'Vue Cheatsheet',
     search: {
       provider: 'local',
+      options: {
+        detailedView: true,
+      },
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -90,7 +105,6 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/themeselection/vue-cheatsheet' },
       { icon: 'twitter', link: 'https://twitter.com/Theme_Selection' }
     ],
 

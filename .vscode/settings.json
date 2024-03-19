@@ -20,4 +20,5 @@
     "emmet.includeLanguages": {
         "markdown": "html",
     },
+    "commentAnchors.tagHighlights.enabled": false,
 }

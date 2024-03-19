@@ -4,32 +4,28 @@ layout: home
 
 hero:
   name: "Vue Cheatsheet"
-  tagline: The only Vue cheatsheet you will ever need
+  tagline: The only VueJS cheatsheet you will ever need
   image:
     src: /hero-image.png
     alt: Vue Cheatsheet
-  actions:
-    - theme: brand
-      text: Let's Start
-      link: /vue/basic
-    - theme: alt
-      text: Other Free Resources
-      link: https://themeselection.com/item/category/freebies/
 
 features:
   - title: Vue
     icon: 
       src: /vue-logo.png
-    details: Accelerate your vue learning & improve your skills with our comprehensive cheatsheet
+      alt: 'Vue'
+    details: Accelerate your vue learning & improve your skills with our comprehensive Vue 3 cheatsheet.
     link: /vue/basic
   - title: Vue Router
     icon: 
       src: /vue-router-logo.png
+      alt: 'Vue Router'
     details: Your Simple Guide to Vue Router, Making Routes as Easy as Following a Map.
     link: /vue-router/basic
   - title: Pinia
     icon: 
       src: /pinia-logo.png
-    details: Your Cheatsheet for  Pinia, Perfect for Vue Beginners and Beyond.
+      alt: 'Pinia'
+    details: Your vue js cheatsheet for Pina, perfect for vue beginners and beyond.
     link: /pinia/basic
 ---

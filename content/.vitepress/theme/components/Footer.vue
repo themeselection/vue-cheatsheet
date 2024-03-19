@@ -45,7 +45,7 @@ const secondColLinks = [
         <hr class="divider">
         <div
             class="container mx-auto flex flex-wrap items-center justify-between border-gray-300 dark:border-zinc-700 pt-8 pb-6 gap-3 px-6 sm:px-12 lg:px-16">
-            <a href="https://themeselection.com/" target="_blank" class="themeselection-logo"> </a>
+            <a href="https://themeselection.com/" target="_blank" class="themeselection-logo" alt="ThemeSelection"> </a>
             <div class="flex items-center gap-x-1">
                 <span>© 2024-Present, Made with</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">

@@ -49,6 +49,28 @@ They are primarily used to guard navigations either by redirecting it or canceli
 11. DOM updates triggered.
 12. Call callbacks passed to `next` in `beforeRouteEnter` guards with instantiated instances.
 
+Every guard function receives two arguments:
+
+`to`: the target route location in a normalized format being navigated to.
+
+`from`: the current route location in a normalized format being navigated away from.
+
+## RouterView slot
+
+The RouterView component exposes a slot that can be used to render the route component
+
+```vue
+<template>
+  <router-view v-slot="{ Component }">
+    <transition>
+      <keep-alive>
+        <component :is="Component" :some-prop="prop"/>
+      </keep-alive>
+    </transition>
+  </router-view>
+</template>
+```
+
 ## Transitions
 
 ```vue
@@ -89,4 +111,31 @@ const routes = [
     </transition>
   </RouterView>
 </template>
+```
+
+## Route Meta fields
+
+Attach arbitrary information to routes like: transition names, or roles to control who can access the route, etc.
+
+```js
+const routes = [
+  {
+    path: '/posts',
+    component: PostsLayout,
+    children: [
+      {
+        path: 'new',
+        component: PostsNew,
+        // only authenticated users can create posts
+        meta: { requiresAuth: true },
+      },
+      {
+        path: ':id',
+        component: PostsDetail,
+        // anybody can read a post
+        meta: { requiresAuth: false },
+      },
+    ],
+  },
+]
 ```
