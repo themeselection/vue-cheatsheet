@@ -50,6 +50,7 @@ export default defineConfig({
     ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],
     ['meta', { property: 'keywords', content: 'Vue 3 Cheatsheet, VueJS Cheatsheet, Vue JS Cheatsheet' }],
     ['meta', { property: 'google-site-verification', content: 'Eb4Y887SF6gMOy33YpMZEZLJuVfQHW9E3b8QjoSTDhw' }],
+    ['script', { src: 'https://buttons.github.io/buttons.js' }]
   ],
   themeConfig: {
     logo: { src: '/vue-cheatsheet-logo.png', alt: 'Vue Cheatsheet' },

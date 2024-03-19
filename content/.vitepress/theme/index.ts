@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme';
 import { h } from 'vue';
 import DocFooter from './components/DocFooter.vue';
 import ProductHuntButton from './components/ProductHuntButton.vue';
+import SocialMediaBtn from './components/SocialMediaBtn.vue';
 import SubscribeAlert from './components/SubscribeAlert.vue';
 import HomeVueThemesCallOut from './components/VueThemesCallOut.vue';
 import './custom.scss';
@@ -14,7 +15,8 @@ export default {
             'home-features-before': h(HomeVueThemesCallOut),
             'doc-after': h(DocFooter),
             'home-hero-before': h(SubscribeAlert),
-            'home-hero-actions-after': h(ProductHuntButton)
+            'home-hero-actions-after': h(ProductHuntButton),
+            'nav-bar-content-after': h(SocialMediaBtn),
         })
     }
 }

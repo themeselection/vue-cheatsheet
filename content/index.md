@@ -8,13 +8,6 @@ hero:
   image:
     src: /hero-image.png
     alt: Vue Cheatsheet
-  actions:
-    - theme: brand
-      text: Let's Start
-      link: /vue/basic
-    - theme: alt
-      text: Other Free Resources
-      link: https://themeselection.com/item/category/freebies/
 
 features:
   - title: Vue

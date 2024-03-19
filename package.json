@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "markdown-it-mathjax3": "^4.3.2",
-    "vue": "^3.4.15"
+    "vue": "^3.4.15",
+    "vue-github-button": "^3.1.0"
   }
 }
