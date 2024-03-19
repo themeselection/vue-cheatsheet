@@ -75,7 +75,7 @@ export const useCounterStore = defineStore('counter', () => {
 
 ```vue
 <script setup>
-  const store = useStore()
+  const store = useCounterStore()
   console.log(store.count)
 </script>
 ```
