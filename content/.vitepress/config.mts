@@ -48,7 +48,8 @@ export default defineConfig({
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { property: 'twitter:site', content: '@Theme_Selection' }],
     ['meta', { property: 'twitter:creator', content: '@Theme_Selection' }],
-    ['meta', { property: 'keywords', content: 'Vue 3 Cheatsheet, VueJS Cheatsheet, Vue JS Cheatsheet' }]
+    ['meta', { property: 'keywords', content: 'Vue 3 Cheatsheet, VueJS Cheatsheet, Vue JS Cheatsheet' }],
+    ['meta', { property: 'google-site-verification', content: 'Eb4Y887SF6gMOy33YpMZEZLJuVfQHW9E3b8QjoSTDhw' }],
   ],
   themeConfig: {
     logo: { src: '/vue-cheatsheet-logo.png', alt: 'Vue Cheatsheet' },
@@ -103,7 +104,6 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/themeselection/vue-cheatsheet' },
       { icon: 'twitter', link: 'https://twitter.com/Theme_Selection' }
     ],
 
