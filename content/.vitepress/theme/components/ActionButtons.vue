@@ -5,7 +5,8 @@ const { isDark } = useData()
 </script>
 <template>
     <div class="mt-4 flex items-center gap-x-3">
-        <a data-v-0c3feb32="" data-v-2270f7fa="" class="VPButton medium brand" href="/vue/basic.html">Let's Start</a>
+        <!-- <a data-v-0c3feb32 data-v-2270f7fa class="VPButton medium brand" href="/vue/basic.html">Let's Start</a> -->
+        <a class="action-btn" href="/vue/basic.html">Let's Start</a>
         <a href="https://www.producthunt.com/posts/vue-cheatsheet?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-vue&#0045;cheatsheet"
             target="_blank"><img
                 :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=445414&theme=${isDark ? 'dark' : 'light'}`"
@@ -14,3 +15,15 @@ const { isDark } = useData()
                 height="40" /></a>
     </div>
 </template>
+
+<style>
+.action-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--vp-c-brand-2);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+</style>
